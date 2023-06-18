@@ -32,6 +32,9 @@ defmodule Helpdesk.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:ash, "~> 2.10.1"},
+      {:ash_postgres, "~> 1.3.29"},
+      {:ash_phoenix, "~> 1.2.14"},
       {:phoenix, "~> 1.7.6"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.10"},
