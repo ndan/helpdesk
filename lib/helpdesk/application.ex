@@ -17,7 +17,9 @@ defmodule Helpdesk.Application do
       # Start Finch
       {Finch, name: Helpdesk.Finch},
       # Start the Endpoint (http/https)
-      HelpdeskWeb.Endpoint
+      HelpdeskWeb.Endpoint,
+      {AshAuthentication.Supervisor, otp_app: :helpdesk}
+
       # Start a worker by calling: Helpdesk.Worker.start_link(arg)
       # {Helpdesk.Worker, arg}
     ]
