@@ -22,7 +22,7 @@ defmodule HelpdeskWeb.Router do
 
     get "/", PageController, :home
 
-    sign_in_route()
+    sign_in_route live_view: HelpdeskWeb.Auth.SignInLive
     sign_out_route AuthController
     auth_routes_for Helpdesk.Accounts.User, to: AuthController
     reset_route []
